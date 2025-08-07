@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+.saved-cities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.saved-cities li {
+    padding: 5px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.saved-cities li:hover {
+    text-decoration: underline;
+}
+
+.weather-info, .error-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.weather-info:not(:empty) {
+    display: block;
+    background-color: #e7f3ff;
+}
+
+.error-message:not(:empty) {
+    display: block;
+    background-color: #ffe7e7;
+    color: #d8000c;
+}
+
+.map {
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 4px;
+}

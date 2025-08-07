@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение погоды</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=5894a96f-2697-4c61-9091-d71cef6c9ff5"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Погода</h1>
+        <div class="input-section">
+            <input type="text" id="cityInput" placeholder="Введите город" autocomplete="off">
+            <ul id="suggestions" class="suggestions"></ul>
+            <button id="getWeatherBtn">Получить погоду</button>
+            <button id="getLocationBtn">Моё местоположение</button>
+        </div>
+        <div class="saved-cities">
+            <h2>Сохранённые города</h2>
+            <ul id="savedCitiesList"></ul>
+        </div>
+        <div id="weatherInfo" class="weather-info"></div>
+        <div id="errorMessage" class="error-message"></div>
+        <div id="map" class="map"></div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
